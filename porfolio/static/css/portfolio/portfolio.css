@@ -1,0 +1,100 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(28 28 28 / 80%);
+    max-height: 100vh;
+    height: calc(100vh - 56px);
+    padding: 1em;
+    font-family: 'Roboto';
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 270px);
+    gap: 1em;
+}
+
+.card-img-container {
+    display: inline-flex;
+    justify-content: center;
+    padding: 1em;
+    height: 150px;
+}
+
+.card-description {
+    height: 100px;
+}
+
+.card {
+    transition: transform .2s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.avatar {
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    filter: brightness(1.2);
+}
+
+.avatar:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+img {
+    object-fit: contain;
+}
+
+body {
+    background-image: url('https://images.hdqwalls.com/wallpapers/minimalist-space-z8.jpg');
+    background-size: cover;
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+}
+
+@keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+
+}
